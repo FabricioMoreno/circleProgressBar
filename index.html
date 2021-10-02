@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="circular">
+            <div class="value-container">
+                0%
+            </div>
+        </div>
+        <div class="dataCircular" id="dataCircular">
+            <label for="dataStartValue" class="data-circle">Start
+                <input type="text" id="dataStartValue" data-circle="start">
+            </label>
+            <label for="dataFinalValue" class="data-circle">Final
+                <input type="text" id="dataFinalValue" data-circle="final">
+            </label>
+            <label for="dataSpeed" class="data-circle">Speed
+                <input type="text" id="dataSpeed" data-circle="speed">
+            </label>
+        </div>
+        <input type="button" value="Start" id="btnStart">
+    </div>
+
+    <div class="cont"></div>
+
+    <!-- script -->
+    <script src="./node_modules/hotkeys-js/dist/hotkeys.min.js"></script>
+    <script src="./index.js" type="module"></script>
+    <script src="./limitCharacter.js"></script>
+</body>
+</html>

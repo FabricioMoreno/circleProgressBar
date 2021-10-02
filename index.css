@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    background: linear-gradient(white 50%,blue 50%);
+}
+
+.container{
+    height: 450px;
+    width: 450px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 8px;
+    box-shadow: 20px 20px 46px rgb(143, 93, 238);
+    display: grid;
+    place-items: center;
+}
+.circular{
+    position: relative;
+    height: 250px;
+    width: 250px;
+    background: orange;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+}
+.circular::before{
+    content: "";
+    position: absolute;
+    height: 84%;
+    width: 84%;
+    background-color: white;
+    border-radius: 50%;
+}
+.value-container{
+    position: relative;
+    font-family: "Poppins",sans-serif;
+    font-size: 50px;
+    color: black ;
+}
+
+.cont{
+    width: 500px;
+    height: 500px;
+    background-color: brown;
+    background: conic-gradient( 
+     red 6deg, orange 6deg);
+}
+/*-------------------------------------------------------------
+                        DATA-CIRCULAR 
+---------------------------------------------------------------*/
+.dataCircular{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 90%;
+    justify-content:space-around;
+}
+.data-circle{
+    width: 50px;
+    height: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+.data-circle input{
+    box-sizing: border-box;
+    width: 36px;
+    height: 36px;
+    text-align: center;
+    margin-top: 8px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+#btnStart{
+    margin-top: 15px;
+    width: 30%;
+    height: 35px;
+}
